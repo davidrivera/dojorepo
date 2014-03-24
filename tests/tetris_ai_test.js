@@ -43,6 +43,8 @@ describe('TetrisAI', function(){
         "      ");
     var move = ai.decideMove(map);
 
+    assert(move == 0); 
+
   });
 
   it('', function() {
