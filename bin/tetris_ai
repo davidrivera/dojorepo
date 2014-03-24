@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+(function() {
+  var Tetris_ai;
+
+  Tetris_ai = require("../lib/tetris_ai");
+
+  new Tetris_ai;
+
+}).call(this);

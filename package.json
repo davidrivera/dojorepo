@@ -1,0 +1,39 @@
+{
+    "name": "tetris_ai",
+    "version": "0.1.0",
+    "author": "dream_team",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davidrivera/dojorepo"
+    },
+    "dependencies": {
+        "q": "",
+        "underscore": ""
+    },
+    "devDependencies": {
+        "blanket": "",
+        "chai": "",
+        "coffee-script": "",
+        "glob": "",
+        "grunt": "",
+        "grunt-contrib-coffee": "",
+        "grunt-contrib-watch": "",
+        "grunt-merge": "",
+        "grunt-mocha-test": "",
+        "grunt-release": "",
+        "grunt-rename": "",
+        "grunt-text-replace": "",
+        "mocha": "",
+        "prompt": "",
+        "source-map-support": "",
+        "sinon": ""
+    },
+    "bin": {
+        "tetris_ai": "./bin/tetris_ai"
+    },
+    "license": "MIT",
+    "main": "./lib/tetris_ai.js",
+    "scripts": {
+        "test": "mocha test/test.js --reporter spec"
+    }
+}
