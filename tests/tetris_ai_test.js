@@ -2,12 +2,15 @@ var assert = require("assert")
 var TetrisAI = require('../lib/tetris_ai')
 
 function makeMap() {
-    var map=[]
+    var map=[]; 
     for (var i=0; i<arguments.length; i++) {
+        var row = []; 
         for(var j=0; j<arguments[i].length; j++) {
-
+           row.push(arguments[i][j]); 
         }
+        map.push(row); 
     }
+    return map; 
 }
 
 describe('TetrisAI', function(){
@@ -23,10 +26,11 @@ describe('TetrisAI', function(){
     })
   })
 
-  it('', function() {
+  it('#decideMove', function() {
     var ai = new TetrisAI()
     var map = 5;
-    ai.decideMove(map)
+    var move = ai.decideMove(map); 
+    assert(typeof move != "undefined"); 
   })
 
   it('', function() {
